@@ -1,0 +1,9 @@
+global:
+  scrape_interval: 5s # Scrape metrics every 5 seconds (Fast for demo purposes)
+
+scrape_configs:
+  - job_name: 'fraud-guard-service'
+    metrics_path: '/metrics'
+    static_configs:
+      - targets: ['fraud-app:8000'] 
+      # Note: 'fraud-app' matches the service name in docker-compose below

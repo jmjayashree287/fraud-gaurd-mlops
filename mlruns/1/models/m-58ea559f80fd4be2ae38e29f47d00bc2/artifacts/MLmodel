@@ -1,0 +1,22 @@
+artifact_path: /workspaces/fraud-gaurd-mlops/mlruns/1/models/m-58ea559f80fd4be2ae38e29f47d00bc2/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.1
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.8.0
+mlflow_version: 3.8.1
+model_id: m-58ea559f80fd4be2ae38e29f47d00bc2
+model_size_bytes: 1748963
+model_uuid: m-58ea559f80fd4be2ae38e29f47d00bc2
+prompts: null
+run_id: 2d99d956418f4f8e926bef170d607fc8
+utc_time_created: '2026-01-03 12:19:04.195055'
